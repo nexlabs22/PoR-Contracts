@@ -7,7 +7,7 @@ import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
  * @title The APIConsumer contract
  * @notice An API Consumer contract that makes GET requests to obtain 24h trading volume of ETH in USD
  */
-contract APIConsumer is ChainlinkClient {
+contract Monitor is ChainlinkClient {
   using Chainlink for Chainlink.Request;
 
   uint256 public volume;
